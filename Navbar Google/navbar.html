@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Navbar</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+	<nav class="navbar">
+
+		<div class="container">
+			<div class="navbar__logo">
+				<img src="logo-cropped.png" alt="">
+			</div>
+	
+			<div class="navbar__menu">
+				<ol>
+					<li><a href="">Gmail</a></li>
+					<li><a href="">Drive</a></li>
+					<li><a href="">Meet</a></li>
+					<li><a href="">Stadia</a></li>
+				</ol>
+			</div>
+
+			<div class="navbar__toggle" onclick="toggleMenu()">
+				<span class="navbar__toggle__line"></span>
+				<span class="navbar__toggle__line"></span>
+				<span class="navbar__toggle__line"></span>
+			</div>
+
+		</div>
+		
+	</nav>
+	
+	<script>
+
+		const menu = document.getElementsByClassName("navbar__menu")[0]
+		const toggleMenu = () =>{
+			menu.classList.toggle("navbar__menu--active")
+
+		}
+
+	</script>
+</body>
+</html>
